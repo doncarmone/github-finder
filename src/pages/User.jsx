@@ -19,7 +19,7 @@ export const User = () => {
       dispatch({ type: 'GET_USER_AND_REPOS', payload: userData });
     };
     getUserData();
-  }, []);
+  }, [dispatch, params.login]);
 
   const {
     name,
